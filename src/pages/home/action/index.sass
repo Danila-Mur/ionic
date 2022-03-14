@@ -1,0 +1,106 @@
+.action
+  padding-top: 106px
+  padding-bottom: 130px
+
+.action__container
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  +max-w($mobile)
+    flex-direction: column
+    justify-content: center
+
+.action__wrapper
+  max-width: 430px
+
+  +max-w($laptop_sm)
+    max-width: 400px
+
+  +max-w($tablet)
+    max-width: 330px
+
+  +max-w($mobile)
+    margin-bottom: 30px
+
+.action__wrapper-subtitle
+  display: block
+  margin-bottom: 33px
+  color: #92a0b3
+  font-family: "Roboto-Regular"
+  font-size: 13px
+  line-height: 1.2
+  letter-spacing: 2.24px
+  text-transform: uppercase
+
+.action__wrapper-title
+  margin-bottom: 34px
+  color: #03060b
+  font-size: 60px
+  font-weight: 700
+  line-height: 1.07
+  letter-spacing: 0.64px
+
+  +max-w($tablet)
+    font-size: 50px
+    margin-bottom: 20px
+
+.action__wrapper-text
+  margin-bottom: 33px
+  color: #445b78
+  font-size: 16px
+  line-height: 1.6
+  letter-spacing: 0.16px
+
+  +max-w($tablet)
+    font-size: 14px
+
+.action__wrapper-icon + .action__wrapper-icon
+  margin-left: 40px
+
+.actiom__amtrak
+  max-width: 544px
+  padding: 221px 48px 48px
+  border-radius: 32px
+  background-image: url('./amtrak-bg.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+
+  +max-w($laptop_sm)
+    max-width: 430px
+    padding: 165px 30px 41px
+
+  +max-w($tablet)
+    max-width: 355px
+    padding: 100px 30px 21px
+
+.actiom__amtrak-img
+  margin-bottom: 17px
+
+.actiom__amtrak-text
+  margin-bottom: 36px
+  color: #fff
+  font-size: 16px
+  line-height: 1.6
+  letter-spacing: 0.16px
+
+.actiom__amtrak-btn
+  position: relative
+  padding: 6px 37px 13px 12px
+  border: none
+  border-radius: 1000px
+  background: rgba(255, 255, 255, 0.2)
+  color: #fff
+  font-size: 12px
+  line-height: 1.08
+
+  &::after
+    content: ""
+    position: absolute
+    top: 50%
+    right: 10px
+    width: 13px
+    height: 6px
+    background-image: url('./arrow-left.svg')
+    background-repeat: no-repeat
+    transform: translateY(-50%)

@@ -1,0 +1,126 @@
+.development
+  padding-top: 566px
+  padding-bottom: 100px
+
+  +max-w(1024)
+    padding-top: 100px
+
+.development__container
+  position: relative
+  display: flex
+  justify-content: space-between
+  margin-bottom: 83px
+
+.development__wrapper
+  max-width: 470px
+
+  +max-w($laptop_sm)
+    max-width: 370px
+
+  +max-w($mobile)
+    margin: 0 auto
+
+  +max-w($mobile_md)
+    max-width: 300px
+
+.development__subtitle
+  display: block
+  margin-bottom: 29px
+  color: #92a0b3
+  font-family: "Roboto-Regular"
+  font-size: 13px
+  line-height: 1.2
+  letter-spacing: 2.24px
+  text-transform: uppercase
+
+.development__title
+  margin-bottom: 29px
+  color: #03060b
+  font-size: 64px
+  font-weight: 700
+  line-height: 1
+  letter-spacing: 3.64px
+
+  +max-w($laptop_sm)
+    font-size: 50px
+
+  +max-w($mobile_md)
+    margin-bottom: 25px
+    font-size: 40px
+
+.development__text
+  color: #445b78
+  font-size: 16px
+  line-height: 1.6
+  letter-spacing: 0.16px
+
+.development__text + .development__text
+  margin-top: 21px
+  margin-bottom: 27px
+
+.development__btn
+  position: relative
+  padding-left: 0
+  border: none
+  color: #3880ff
+  background-color: transparent
+  font-size: 12px
+  line-height: 1.07
+  letter-spacing: 0.28px
+
+  &::after
+    content: ""
+    position: absolute
+    top: 50%
+    right: -18px
+    width: 13px
+    height: 6px
+    background-image: url('./arrow-left-blue.svg')
+    background-repeat: no-repeat
+    transform: translateY(-50%)
+
+.development__img
+  margin-top: -62px
+  margin-right: 26px
+
+  +max-w($laptop_sm)
+    position: absolute
+    right: 0
+    width: auto
+
+  +max-w($tablet)
+    opacity: .6
+    z-index: -1
+
+  +max-w($mobile)
+    display: none
+
+.development__cards
+  display: grid
+  grid-template-columns: repeat(3, auto )
+  column-gap: 62px
+
+  +max-w($mobile)
+    grid-template-columns: 1fr
+    row-gap: 25px
+
+// .development__card
+//   text-align: center
+
+.development__card-img
+  margin-bottom: 27px
+
+.development__card-title
+  display: block
+  margin-bottom: 20px
+  color: #03060B
+  font-size: 20px
+  font-weight: 700
+  line-height: 1.02
+  letter-spacing: 0.2px
+
+.development__card-text
+  color: #445B78
+  font-size: 16px
+  line-height: 1.8
+  letter-spacing: 0.16px

@@ -1,0 +1,85 @@
+.intro
+  padding-top: 89px
+  padding-bottom: 50px
+
+  +max-w($mobile_md)
+    padding-top: 50px
+
+.intro__wrapper
+  max-width: 700px
+
+  +max-w($tablet)
+    max-width: 350px
+
+  +max-w($mobile_md)
+    margin: 0 auto
+
+.intro__title
+  margin-bottom: 62px
+  color: #03060B
+  font-size: 88px
+  line-height: 1
+  font-weight: 700
+  letter-spacing: 5px
+
+  +max-w($tablet)
+    margin-bottom: 30px
+    font-size: 40px
+
+.into__text
+  max-width: 600px
+  margin-bottom: 38px
+  color: #445B78
+  font-size: 20px
+  line-height: 1.6
+  letter-spacing: 0.2px
+
+  +max-w($tablet)
+    margin-bottom: 25px
+    font-size: 16px
+
+.intro__button-started
+  position: relative
+  margin-right: 21px
+  padding-right: 29px
+  padding-left: 20px
+  border: none
+  border-radius: 1000px
+  color: #fff
+  background: #1b6dff
+  font-size: 14px
+  font-weight: 700
+  line-height: 1
+
+  &::after
+    content: ""
+    position: absolute
+    top: 50%
+    right: 10px
+    width: 13px
+    height: 6px
+    background-image: url('./arrow-left.svg')
+    background-repeat: no-repeat
+    transform: translateY(-50%)
+
+.intro__button-talk
+  position: relative
+  border: none
+  color: #3880FF
+  background-color: transparent
+  font-size: 13px
+  font-weight: 700
+  line-height: 1.08
+  letter-spacing: 0.28px
+
+  &::after
+    content: ""
+    position: absolute
+    top: 55%
+    right: -10px
+    width: 13px
+    height: 6px
+    background-image: url('./arrow-left-blue.svg')
+    background-repeat: no-repeat
+    transform: translateY(-50%)
+

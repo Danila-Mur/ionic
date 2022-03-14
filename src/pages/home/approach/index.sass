@@ -1,0 +1,78 @@
+.approach
+  padding: 133px 0
+
+.approach__wrapper
+  display: flex
+  justify-content: space-between
+  align-items: flex-end
+  margin-bottom: 93px
+
+  +max-w($mobile)
+    flex-direction: column
+    align-items: center
+    margin-bottom: 40px
+
+.approach__subtitle
+  display: block
+  margin-bottom: 32px
+  color: #92a0b3
+  font-family: "Roboto-Regular"
+  font-size: 13px
+  line-height: 1.2
+  letter-spacing: 2.24px
+  text-transform: uppercase
+
+.approach__title
+  max-width: 329px
+  color: #03060b
+  font-size: 61px
+  font-weight: 700
+  line-height: 1.05
+  letter-spacing: 2.64px
+
+  +max-w($mobile)
+    max-width: 450px
+    margin-bottom: 15px
+
+.approach__text
+  max-width: 450px
+  color: #445b78
+  font-size: 16px
+  line-height: 1.6
+  letter-spacing: 0.16px
+
+.approach__cards
+  display: grid
+  grid-template-columns: repeat(3, 352px)
+  column-gap: 32px
+
+  +max-w($laptop_sm)
+    grid-template-columns: repeat(3, 300px)
+
+  +max-w($tablet)
+    grid-template-columns: repeat(auto-fill, minmax(270px, 300px) )
+    gap: 30px
+    justify-content: center
+
+.approach__card
+  padding: 40px 33px 36px 32px
+  border-radius: 16px
+  background: #f6f8fc
+
+.approach__card-img
+  margin-bottom: 60px
+
+.approach__card-title
+  display: block
+  margin-bottom: 18px
+  color: #03060b
+  font-size: 19px
+  font-weight: 700
+  line-height: 1.15
+  letter-spacing: 1.2px
+
+.approach__card-text
+  color: #445b78
+  font-size: 16px
+  line-height: 1.6
+  letter-spacing: 0.16px

@@ -1,0 +1,14 @@
+.companies
+  padding-top: 97px
+  padding-bottom: 120px
+
+.companies__wrapper
+  display: grid
+  grid-template-columns: repeat(auto-fill, minmax(30px, 56px))
+  column-gap: 120px
+
+  +max-w($laptop_sm)
+    column-gap: 90px
+
+  +max-w($tablet)
+    gap: 30px 90px

@@ -1,0 +1,81 @@
+.footer
+  padding-top: 67px
+  padding-bottom: 50px
+
+.footer__columns
+  display: grid
+  grid-template-columns: repeat(6, auto)
+  padding-bottom: 72px
+  border-bottom: 1px solid #e9edf3
+
+  +max-w($mobile)
+    grid-template-columns: repeat(auto-fill, minmax(200px, 220px))
+    gap: 40px
+    justify-content: center
+  
+.footer__column-title
+  display: block
+  margin-bottom: 21px
+  color: #03060b
+  font-size: 14px
+  font-weight: 700
+  line-height: 1.2
+  letter-spacing: 0.32px
+
+.footer__column-item + .footer__column-item
+  margin-top: 11px
+
+.footer__column-link
+  color: #445b78
+  font-size: 13px
+  line-height: 1.7
+  letter-spacing: 0.14px
+  text-decoration: none
+
+.footer__wrapper
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding-top: 51px
+
+  +max-w($mobile_md)
+    flex-direction: column
+    gap: 15px
+
+.footer__copyright-text
+  color: #92a0b3
+  font-size: 13px
+  line-height: 1.05
+
+.footer__copyright-link
+  margin-left: 12px
+  color: #92a0b3
+  font-size: 13px
+  line-height: 1.05
+  text-decoration: none
+
+.footer__socials
+  display: flex
+
+.footer__socials-item + .footer__socials-item
+  margin-left: 16px
+
+.footer__socials-link
+  text-decoration: none
+
+  &::before
+    color: #b2becd
+    font-family: 'FontAwesome'
+    font-size: 20px
+
+  &--twitter
+    &::before
+      content: "\e901"
+
+  &--git
+    &::before
+      content: "\e900"
+
+  &--facebook
+    &::before
+      content: "\e902"

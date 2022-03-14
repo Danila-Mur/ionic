@@ -1,0 +1,111 @@
+.get-up
+  position: relative
+  padding-top: 110px
+  padding-bottom: 67px
+
+  &::before
+    content: ""
+    position: absolute
+    top: -57px
+    left: 16px
+    width: 116px
+    height: 278px
+    background-image: url('./get-up-before.png')
+    background-repeat: no-repeat
+
+    +max-w($mobile)
+      display: none
+
+  &::after
+    content: ""
+    position: absolute
+    bottom: -47px
+    right: 16px
+    width: 160px
+    height: 301px
+    background-image: url('./get-up-after.png')
+    background-repeat: no-repeat
+
+    +max-w($mobile)
+      display: none
+
+.get-up-wrapper
+  display: flex
+
+  +max-w($mobile)
+    flex-direction: column
+    width: 100%
+
+.get-up-left
+  max-width: 100%
+  width: 50%
+  padding-top: 150px
+  padding-bottom: 186px
+  background-color: #425d8d
+
+  +max-w($mobile)
+    width: 100%
+    padding: 70px 0
+
+.get-up-left__title
+  display: block
+  max-width: 290px
+  margin: 0 auto
+  color: #ffffff
+  font-size: 48px
+  line-height: 1.12
+
+.get-up-right
+  display: flex
+  justify-content: center
+  align-items: center
+  max-width: 100%
+  width: 50%
+  gap: 32px
+  background-color: #e8f5ff
+  text-align: center
+
+  +max-w($mobile)
+    width: 100%
+    padding: 70px 0
+
+.get-up-right__btn
+  position: relative
+  border: none
+  background-color: transparent
+  font-size: 14px
+  font-weight: 700
+  line-height: 1
+  cursor: pointer
+
+  &--blue
+    padding: 4px 29px 7px 20px
+    border-radius: 1000px
+    color: #fff
+    background: #1b6dff
+
+    &::after
+      content: ""
+      position: absolute
+      top: 50%
+      right: 10px
+      width: 13px
+      height: 6px
+      background-image: url('./arrow-left.svg')
+      background-repeat: no-repeat
+      transform: translateY(-50%)
+
+  &--transparent
+    padding-right: 30px
+    color: #3880ff
+
+    &::after
+      content: ""
+      position: absolute
+      top: 50%
+      right: 10px
+      width: 13px
+      height: 6px
+      background-image: url('./arrow-left-blue.svg')
+      background-repeat: no-repeat
+      transform: translateY(-50%)

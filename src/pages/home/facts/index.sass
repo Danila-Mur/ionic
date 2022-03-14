@@ -1,0 +1,51 @@
+.facts
+  padding: 120px 0
+
+.facts__wrapper
+  display: flex
+
+  +max-w($tablet)
+    flex-direction: column
+    align-items: center
+
+.facts__content
+  padding-top: 50px
+  padding-left: 57px
+  background-color: #fbfbfd
+
+  &::after
+    content: ""
+    background-color: #fbfbfd
+
+.facts__content-title
+  max-width: 439px
+  margin-bottom: 80px
+  color: #03060b
+  font-size: 32px
+  font-weight: 700
+  line-height: 1.1
+
+  &--regular
+    font-weight: 400
+
+.facts__content-btn
+  position: relative
+  padding-left: 0px
+  border: none
+  color: #3880ff
+  background-color: transparent
+  font-size: 12px
+  line-height: 1.07
+  letter-spacing: 0.28px
+  cursor: pointer
+
+  &::after
+    content: ""
+    position: absolute
+    top: 50%
+    right: -15px
+    width: 13px
+    height: 6px
+    background-image: url('./arrow-left-blue.svg')
+    background-repeat: no-repeat
+    transform: translateY(-50%)

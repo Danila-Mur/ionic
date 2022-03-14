@@ -1,0 +1,95 @@
+.dive
+  padding-top: 175px
+  padding-bottom: 110px
+
+.dive__wrapper
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 120px
+
+  +max-w($tablet)
+    flex-direction: column
+    text-align: center
+
+.dive__subtitle
+  display: block
+  margin-bottom: 25px
+  color: #92a0b3
+  font-family: "Roboto-Regular"
+  font-size: 13px
+  line-height: 1.2
+  letter-spacing: 2.24px
+  text-transform: uppercase
+
+.dive__title
+  color: #03060b
+  font-size: 61px
+  font-weight: 700
+  line-height: 1.05
+  letter-spacing: 0.64px
+
+  +max-w($tablet)
+    font-size: 50px
+
+  +max-w($mobile_md)
+    font-size: 43px
+
+.dive__text
+  margin-bottom: 50px
+  color: #445b78
+  font-size: 16px
+  line-height: 1.6
+  letter-spacing: 0.16px
+
+.dive__btn
+  position: relative
+  border: none
+  color: #3880ff
+  background-color: transparent
+  font-size: 14px
+  line-height: 1.2
+  letter-spacing: 0.32px
+  cursor: pointer
+
+  &::after
+    content: ""
+    position: absolute
+    top: 50%
+    right: -18px
+    width: 13px
+    height: 6px
+    background-image: url('./arrow-left-blue.svg')
+    background-repeat: no-repeat
+    transform: translateY(-50%)
+
+.dive__cards
+  display: grid
+  grid-template-columns: repeat(4, 256px)
+  column-gap: 32px
+
+  +max-w($laptop_sm)
+    grid-template-columns: repeat(4, 216px)
+
+  +max-w($tablet)
+    grid-template-columns: repeat(auto-fill, minmax(216px, 1fr) )
+    gap: 30px
+    justify-content: center
+
+.dive__card-img
+  margin-bottom: 31px
+
+.dive__card-title
+  display: block
+  margin-bottom: 20px
+  color: #03060b
+  font-size: 20px
+  font-weight: 700
+  line-height: 1.12
+  letter-spacing: 0.2px
+
+.dive__card-text
+  color: #445b78
+  font-size: 16px
+  line-height: 1.8
+  letter-spacing: 0.16px
