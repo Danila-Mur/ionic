@@ -31,6 +31,10 @@
   line-height: 1.7
   letter-spacing: 0.14px
   text-decoration: none
+  transition: all .3s
+
+  &:hover
+    color: #92a0b3
 
 .footer__wrapper
   display: flex
@@ -53,6 +57,10 @@
   font-size: 13px
   line-height: 1.05
   text-decoration: none
+  transition: all .3s
+
+  &:hover
+    color: #445b78
 
 .footer__socials
   display: flex
@@ -62,6 +70,8 @@
 
 .footer__socials-link
   text-decoration: none
+  
+  
 
   &::before
     color: #b2becd
@@ -69,13 +79,28 @@
     font-size: 20px
 
   &--twitter
+
+    &:hover
+      &::before
+        color: #1da1f2
+
     &::before
       content: "\e901"
 
   &--git
+
+    &:hover
+      &::before
+        color: #161b22
+
     &::before
       content: "\e900"
 
   &--facebook
+
+    &:hover
+      &::before
+        color: #1196f5
+
     &::before
       content: "\e902"

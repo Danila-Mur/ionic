@@ -51,6 +51,7 @@
   line-height: 1.2
   letter-spacing: 0.32px
   cursor: pointer
+  transition: all .3s
 
   &::after
     content: ""
@@ -62,6 +63,14 @@
     background-image: url('./arrow-left-blue.svg')
     background-repeat: no-repeat
     transform: translateY(-50%)
+    transition: all .3s
+
+  &:hover
+    opacity: .9
+
+    &::after
+      right: -25px
+
 
 .dive__cards
   display: grid

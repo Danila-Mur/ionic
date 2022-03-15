@@ -77,6 +77,7 @@
   font-weight: 700
   line-height: 1
   cursor: pointer
+  transition: all .3s
 
   &--blue
     padding: 4px 29px 7px 20px
@@ -84,28 +85,29 @@
     color: #fff
     background: #1b6dff
 
+  &::after
+    content: ""
+    position: absolute
+    top: 50%
+    right: 10px
+    width: 13px
+    height: 6px
+    background-image: url('./arrow-left.svg')
+    background-repeat: no-repeat
+    transform: translateY(-50%)
+    transition: all .3s
+
+  &:hover
+    opacity: .9
+
     &::after
-      content: ""
-      position: absolute
-      top: 50%
-      right: 10px
-      width: 13px
-      height: 6px
-      background-image: url('./arrow-left.svg')
-      background-repeat: no-repeat
-      transform: translateY(-50%)
+      right: 7px
+
 
   &--transparent
     padding-right: 30px
     color: #3880ff
 
     &::after
-      content: ""
-      position: absolute
-      top: 50%
-      right: 10px
-      width: 13px
-      height: 6px
       background-image: url('./arrow-left-blue.svg')
-      background-repeat: no-repeat
-      transform: translateY(-50%)
+

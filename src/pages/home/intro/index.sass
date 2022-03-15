@@ -50,6 +50,8 @@
   font-size: 14px
   font-weight: 700
   line-height: 1
+  cursor: pointer
+  transition: all .3s
 
   &::after
     content: ""
@@ -61,6 +63,13 @@
     background-image: url('./arrow-left.svg')
     background-repeat: no-repeat
     transform: translateY(-50%)
+    transition: all .3s
+
+  &:hover
+    opacity: .9
+
+    &::after
+      right: 7px
 
 .intro__button-talk
   position: relative
@@ -71,6 +80,8 @@
   font-weight: 700
   line-height: 1.08
   letter-spacing: 0.28px
+  cursor: pointer
+  transition: all .3s
 
   &::after
     content: ""
@@ -82,4 +93,10 @@
     background-image: url('./arrow-left-blue.svg')
     background-repeat: no-repeat
     transform: translateY(-50%)
+    transition: all .3s
+
+  &:hover
+
+    &::after
+      right: -15px
 

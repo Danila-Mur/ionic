@@ -67,6 +67,8 @@
   font-size: 12px
   line-height: 1.07
   letter-spacing: 0.28px
+  cursor: pointer
+  transition: all .3s
 
   &::after
     content: ""
@@ -78,6 +80,13 @@
     background-image: url('./arrow-left-blue.svg')
     background-repeat: no-repeat
     transform: translateY(-50%)
+    transition: all .3s
+
+  &:hover
+
+    &::after
+      right: -25px
+
 
 .development__img
   margin-top: -62px
